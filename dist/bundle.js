@@ -57,10 +57,10 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "/dist/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 16);
+/******/ 	return __webpack_require__(__webpack_require__.s = 15);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -386,9 +386,9 @@ module.exports = invariant;
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(/*! ./cjs/react.production.min.js */ 17);
+  module.exports = __webpack_require__(/*! ./cjs/react.production.min.js */ 16);
 } else {
-  module.exports = __webpack_require__(/*! ./cjs/react.development.js */ 18);
+  module.exports = __webpack_require__(/*! ./cjs/react.development.js */ 17);
 }
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../process/browser.js */ 0)))
 
@@ -921,7 +921,7 @@ module.exports = shallowEqual;
  * 
  */
 
-var isTextNode = __webpack_require__(/*! ./isTextNode */ 21);
+var isTextNode = __webpack_require__(/*! ./isTextNode */ 20);
 
 /*eslint-disable no-bitwise */
 
@@ -1033,63 +1033,6 @@ module.exports = getActiveElement;
 
 /***/ }),
 /* 15 */
-/*!**********************************!*\
-  !*** ./src/components/Clock.jsx ***!
-  \**********************************/
-/*! dynamic exports provided */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(/*! react */ 3);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Clock = function (_React$Component) {
-	_inherits(Clock, _React$Component);
-
-	function Clock() {
-		_classCallCheck(this, Clock);
-
-		return _possibleConstructorReturn(this, (Clock.__proto__ || Object.getPrototypeOf(Clock)).apply(this, arguments));
-	}
-
-	_createClass(Clock, [{
-		key: 'render',
-		value: function render() {
-			return _react2.default.createElement(
-				'h1',
-				null,
-				'Time: ',
-				Date.now(),
-				' Changed'
-			);
-		}
-	}]);
-
-	return Clock;
-}(_react2.default.Component);
-
-exports.default = Clock;
-
-/***/ }),
-/* 16 */
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
@@ -1104,24 +1047,20 @@ var _react = __webpack_require__(/*! react */ 3);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(/*! react-dom */ 19);
+var _reactDom = __webpack_require__(/*! react-dom */ 18);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _App = __webpack_require__(/*! ./components/App.jsx */ 33);
+var _App = __webpack_require__(/*! ./components/App.jsx */ 32);
 
 var _App2 = _interopRequireDefault(_App);
 
-var _Clock = __webpack_require__(/*! ./components/Clock.jsx */ 15);
-
-var _Clock2 = _interopRequireDefault(_Clock);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_reactDom2.default.render(_react2.default.createElement(_Clock2.default, null), document.getElementById('root'));
+_reactDom2.default.render(_react2.default.createElement(_App2.default, null), document.getElementById('root'));
 
 /***/ }),
-/* 17 */
+/* 16 */
 /*!********************************************************!*\
   !*** ./node_modules/react/cjs/react.production.min.js ***!
   \********************************************************/
@@ -1256,7 +1195,7 @@ module.exports = { Children: { map: S.map, forEach: S.forEach, count: S.count, t
     } }, Component: B.Component, PureComponent: B.PureComponent, unstable_AsyncComponent: B.AsyncComponent, createElement: G.createElement, cloneElement: G.cloneElement, isValidElement: G.isValidElement, createFactory: G.createFactory, version: "16.0.0", __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED: { ReactCurrentOwner: C, assign: f } };
 
 /***/ }),
-/* 18 */
+/* 17 */
 /*!*****************************************************!*\
   !*** ./node_modules/react/cjs/react.development.js ***!
   \*****************************************************/
@@ -2964,7 +2903,7 @@ if (process.env.NODE_ENV !== "production") {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../process/browser.js */ 0)))
 
 /***/ }),
-/* 19 */
+/* 18 */
 /*!*****************************************!*\
   !*** ./node_modules/react-dom/index.js ***!
   \*****************************************/
@@ -3004,14 +2943,14 @@ if (process.env.NODE_ENV === 'production') {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(/*! ./cjs/react-dom.production.min.js */ 20);
+  module.exports = __webpack_require__(/*! ./cjs/react-dom.production.min.js */ 19);
 } else {
-  module.exports = __webpack_require__(/*! ./cjs/react-dom.development.js */ 23);
+  module.exports = __webpack_require__(/*! ./cjs/react-dom.development.js */ 22);
 }
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../process/browser.js */ 0)))
 
 /***/ }),
-/* 20 */
+/* 19 */
 /*!****************************************************************!*\
   !*** ./node_modules/react-dom/cjs/react-dom.production.min.js ***!
   \****************************************************************/
@@ -5416,7 +5355,7 @@ var ek = { createPortal: dk, hydrate: function hydrate(a, b, c) {
   unstable_deferredUpdates: Xj.deferredUpdates, flushSync: Xj.flushSync, __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED: { EventPluginHub: Jb, EventPluginRegistry: sa, EventPropagators: Th, ReactControlledComponent: nb, ReactDOMComponentTree: G, ReactDOMEventListener: L } };Cj({ findFiberByHostInstance: G.getClosestInstanceFromNode, findHostInstanceByFiber: Xj.findHostInstance, bundleType: 0, version: "16.0.0", rendererPackageName: "react-dom" });module.exports = ek;
 
 /***/ }),
-/* 21 */
+/* 20 */
 /*!*********************************************!*\
   !*** ./node_modules/fbjs/lib/isTextNode.js ***!
   \*********************************************/
@@ -5436,7 +5375,7 @@ var ek = { createPortal: dk, hydrate: function hydrate(a, b, c) {
  * @typechecks
  */
 
-var isNode = __webpack_require__(/*! ./isNode */ 22);
+var isNode = __webpack_require__(/*! ./isNode */ 21);
 
 /**
  * @param {*} object The object to check.
@@ -5449,7 +5388,7 @@ function isTextNode(object) {
 module.exports = isTextNode;
 
 /***/ }),
-/* 22 */
+/* 21 */
 /*!*****************************************!*\
   !*** ./node_modules/fbjs/lib/isNode.js ***!
   \*****************************************/
@@ -5485,7 +5424,7 @@ function isNode(object) {
 module.exports = isNode;
 
 /***/ }),
-/* 23 */
+/* 22 */
 /*!*************************************************************!*\
   !*** ./node_modules/react-dom/cjs/react-dom.development.js ***!
   \*************************************************************/
@@ -5501,7 +5440,7 @@ module.exports = isNode;
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};if(process.env.NODE_ENV!=="production"){(function(){'use strict';var react=__webpack_require__(/*! react */ 3);var invariant=__webpack_require__(/*! fbjs/lib/invariant */ 2);var ExecutionEnvironment=__webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 9);var _assign=__webpack_require__(/*! object-assign */ 4);var EventListener=__webpack_require__(/*! fbjs/lib/EventListener */ 10);var require$$0=__webpack_require__(/*! fbjs/lib/warning */ 6);var hyphenateStyleName=__webpack_require__(/*! fbjs/lib/hyphenateStyleName */ 24);var emptyFunction=__webpack_require__(/*! fbjs/lib/emptyFunction */ 1);var camelizeStyleName=__webpack_require__(/*! fbjs/lib/camelizeStyleName */ 26);var performanceNow=__webpack_require__(/*! fbjs/lib/performanceNow */ 28);var propTypes=__webpack_require__(/*! prop-types */ 30);var emptyObject=__webpack_require__(/*! fbjs/lib/emptyObject */ 5);var checkPropTypes=__webpack_require__(/*! prop-types/checkPropTypes */ 7);var shallowEqual=__webpack_require__(/*! fbjs/lib/shallowEqual */ 11);var containsNode=__webpack_require__(/*! fbjs/lib/containsNode */ 12);var focusNode=__webpack_require__(/*! fbjs/lib/focusNode */ 13);var getActiveElement=__webpack_require__(/*! fbjs/lib/getActiveElement */ 14);/**
+ */var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};if(process.env.NODE_ENV!=="production"){(function(){'use strict';var react=__webpack_require__(/*! react */ 3);var invariant=__webpack_require__(/*! fbjs/lib/invariant */ 2);var ExecutionEnvironment=__webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 9);var _assign=__webpack_require__(/*! object-assign */ 4);var EventListener=__webpack_require__(/*! fbjs/lib/EventListener */ 10);var require$$0=__webpack_require__(/*! fbjs/lib/warning */ 6);var hyphenateStyleName=__webpack_require__(/*! fbjs/lib/hyphenateStyleName */ 23);var emptyFunction=__webpack_require__(/*! fbjs/lib/emptyFunction */ 1);var camelizeStyleName=__webpack_require__(/*! fbjs/lib/camelizeStyleName */ 25);var performanceNow=__webpack_require__(/*! fbjs/lib/performanceNow */ 27);var propTypes=__webpack_require__(/*! prop-types */ 29);var emptyObject=__webpack_require__(/*! fbjs/lib/emptyObject */ 5);var checkPropTypes=__webpack_require__(/*! prop-types/checkPropTypes */ 7);var shallowEqual=__webpack_require__(/*! fbjs/lib/shallowEqual */ 11);var containsNode=__webpack_require__(/*! fbjs/lib/containsNode */ 12);var focusNode=__webpack_require__(/*! fbjs/lib/focusNode */ 13);var getActiveElement=__webpack_require__(/*! fbjs/lib/getActiveElement */ 14);/**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
  * This source code is licensed under the MIT license found in the
@@ -8895,7 +8834,7 @@ if(/^(https?|file):$/.test(protocol)){console.info('%cDownload the React DevTool
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../process/browser.js */ 0)))
 
 /***/ }),
-/* 24 */
+/* 23 */
 /*!*****************************************************!*\
   !*** ./node_modules/fbjs/lib/hyphenateStyleName.js ***!
   \*****************************************************/
@@ -8915,7 +8854,7 @@ if(/^(https?|file):$/.test(protocol)){console.info('%cDownload the React DevTool
 
 
 
-var hyphenate = __webpack_require__(/*! ./hyphenate */ 25);
+var hyphenate = __webpack_require__(/*! ./hyphenate */ 24);
 
 var msPattern = /^ms-/;
 
@@ -8942,7 +8881,7 @@ function hyphenateStyleName(string) {
 module.exports = hyphenateStyleName;
 
 /***/ }),
-/* 25 */
+/* 24 */
 /*!********************************************!*\
   !*** ./node_modules/fbjs/lib/hyphenate.js ***!
   \********************************************/
@@ -8983,7 +8922,7 @@ function hyphenate(string) {
 module.exports = hyphenate;
 
 /***/ }),
-/* 26 */
+/* 25 */
 /*!****************************************************!*\
   !*** ./node_modules/fbjs/lib/camelizeStyleName.js ***!
   \****************************************************/
@@ -9003,7 +8942,7 @@ module.exports = hyphenate;
 
 
 
-var camelize = __webpack_require__(/*! ./camelize */ 27);
+var camelize = __webpack_require__(/*! ./camelize */ 26);
 
 var msPattern = /^-ms-/;
 
@@ -9031,7 +8970,7 @@ function camelizeStyleName(string) {
 module.exports = camelizeStyleName;
 
 /***/ }),
-/* 27 */
+/* 26 */
 /*!*******************************************!*\
   !*** ./node_modules/fbjs/lib/camelize.js ***!
   \*******************************************/
@@ -9071,7 +9010,7 @@ function camelize(string) {
 module.exports = camelize;
 
 /***/ }),
-/* 28 */
+/* 27 */
 /*!*************************************************!*\
   !*** ./node_modules/fbjs/lib/performanceNow.js ***!
   \*************************************************/
@@ -9091,7 +9030,7 @@ module.exports = camelize;
  * @typechecks
  */
 
-var performance = __webpack_require__(/*! ./performance */ 29);
+var performance = __webpack_require__(/*! ./performance */ 28);
 
 var performanceNow;
 
@@ -9113,7 +9052,7 @@ if (performance.now) {
 module.exports = performanceNow;
 
 /***/ }),
-/* 29 */
+/* 28 */
 /*!**********************************************!*\
   !*** ./node_modules/fbjs/lib/performance.js ***!
   \**********************************************/
@@ -9144,7 +9083,7 @@ if (ExecutionEnvironment.canUseDOM) {
 module.exports = performance || {};
 
 /***/ }),
-/* 30 */
+/* 29 */
 /*!******************************************!*\
   !*** ./node_modules/prop-types/index.js ***!
   \******************************************/
@@ -9174,16 +9113,16 @@ if (process.env.NODE_ENV !== 'production') {
   // By explicitly using `prop-types` you are opting into new development behavior.
   // http://fb.me/prop-types-in-prod
   var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(/*! ./factoryWithTypeCheckers */ 31)(isValidElement, throwOnDirectAccess);
+  module.exports = __webpack_require__(/*! ./factoryWithTypeCheckers */ 30)(isValidElement, throwOnDirectAccess);
 } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
   // http://fb.me/prop-types-in-prod
-  module.exports = __webpack_require__(/*! ./factoryWithThrowingShims */ 32)();
+  module.exports = __webpack_require__(/*! ./factoryWithThrowingShims */ 31)();
 }
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../process/browser.js */ 0)))
 
 /***/ }),
-/* 31 */
+/* 30 */
 /*!************************************************************!*\
   !*** ./node_modules/prop-types/factoryWithTypeCheckers.js ***!
   \************************************************************/
@@ -9713,7 +9652,7 @@ module.exports = function (isValidElement, throwOnDirectAccess) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../process/browser.js */ 0)))
 
 /***/ }),
-/* 32 */
+/* 31 */
 /*!*************************************************************!*\
   !*** ./node_modules/prop-types/factoryWithThrowingShims.js ***!
   \*************************************************************/
@@ -9777,7 +9716,7 @@ module.exports = function () {
 };
 
 /***/ }),
-/* 33 */
+/* 32 */
 /*!********************************!*\
   !*** ./src/components/App.jsx ***!
   \********************************/
@@ -9798,7 +9737,7 @@ var _react = __webpack_require__(/*! react */ 3);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Clock = __webpack_require__(/*! ./Clock.jsx */ 15);
+var _Clock = __webpack_require__(/*! ./Clock.jsx */ 33);
 
 var _Clock2 = _interopRequireDefault(_Clock);
 
@@ -9829,7 +9768,9 @@ var App = function (_React$Component) {
           'h1',
           null,
           'Hello World'
-        )
+        ),
+        'asd',
+        _react2.default.createElement(_Clock2.default, null)
       );
     }
   }]);
@@ -9839,5 +9780,70 @@ var App = function (_React$Component) {
 
 exports.default = App;
 
+/***/ }),
+/* 33 */
+/*!**********************************!*\
+  !*** ./src/components/Clock.jsx ***!
+  \**********************************/
+/*! dynamic exports provided */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ 3);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Clock = function (_React$Component) {
+	_inherits(Clock, _React$Component);
+
+	function Clock() {
+		_classCallCheck(this, Clock);
+
+		return _possibleConstructorReturn(this, (Clock.__proto__ || Object.getPrototypeOf(Clock)).apply(this, arguments));
+	}
+
+	_createClass(Clock, [{
+		key: 'render',
+		value: function render() {
+			return _react2.default.createElement(
+				'span',
+				null,
+				_react2.default.createElement(
+					'h1',
+					null,
+					Date.now()
+				),
+				_react2.default.createElement(
+					'h2',
+					null,
+					'Hi'
+				)
+			);
+		}
+	}]);
+
+	return Clock;
+}(_react2.default.Component);
+
+exports.default = Clock;
+
 /***/ })
 /******/ ]);
+//# sourceMappingURL=bundle.js.map

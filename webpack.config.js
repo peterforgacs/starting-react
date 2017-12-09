@@ -1,6 +1,5 @@
 var webpack = require('webpack'),
-path = require('path'),
-DashboardPlugin = require('webpack-dashboard/plugin');
+path = require('path');
 
 module.exports = {
 entry: {
@@ -21,7 +20,5 @@ module: {
 		}
 	}]
 },
-plugins: [
-    new DashboardPlugin()
-]
+devtool: "source-map"
 };
